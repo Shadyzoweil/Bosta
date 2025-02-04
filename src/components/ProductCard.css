@@ -1,0 +1,87 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+
+  aspect-ratio: 4 / 5; /* Ensures proportional size */
+  max-width: 300px; /* Responsive width */
+  /* Prevents shrinking too much */
+  padding: 20px;
+
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  max-width: 80%;
+  aspect-ratio: 1/1; /* Keeps images square */
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.product-name {
+  color: var(--Black-GSMS, #011632);
+  text-align: center;
+  font-family: Futura;
+  font-size: clamp(10px, 4vw, 17px); /* Responsive font size */
+  font-weight: 700;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." for long names */
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-p {
+  font-size: clamp(8px, 4vw, 14px);
+  color: #666;
+}
+
+.product-button {
+  width: 80%;
+  padding: 6px;
+  font-size: clamp(8px, 2.5vw, 10px);
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--bosta-mint-Green, #429e91);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #377f76;
+}
+
+/* Responsive Grid Layout */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  justify-content: center;
+}
+
+.product-card-details {
+  display: flex;
+  padding: 36px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Allow the card to take the full available width */
+  max-width: 900px;
+  height: 400px; /* Maximum width to prevent the card from getting too large */
+  background: #fff;
+  border-radius: 24px 100px;
+  gap: 24px;
+}

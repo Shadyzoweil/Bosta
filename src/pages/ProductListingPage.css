@@ -1,0 +1,17 @@
+.products-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.wide-div {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}

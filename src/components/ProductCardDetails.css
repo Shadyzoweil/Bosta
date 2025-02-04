@@ -1,0 +1,48 @@
+.detailed-product-card {
+  display: flex;
+  padding: 36px;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 100px 20px;
+  background: #fff;
+  max-width: 80%;
+  gap: 10px;
+}
+
+.detailed-product-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 47%;
+  flex-shrink: 0;
+}
+
+.detailed-product-card-name {
+  color: var(--Black-bosta, #011632);
+
+  /* H2-Medium */
+  /* font-family: Futura; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.detailed-product-card-image {
+  aspect-ratio: 564/332;
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .detailed-product-card {
+    flex-direction: column;
+  }
+  .detailed-product-card-details {
+    max-width: 100%;
+  }
+  .detailed-product-card-image {
+    max-width: 100%;
+  }
+}

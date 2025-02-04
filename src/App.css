@@ -1,0 +1,85 @@
+:root {
+  --Black-bosta: #011632;
+  --Light-Dark: #3c4959;
+  --bosta-gradient: linear-gradient(
+      53deg,
+      rgba(37, 180, 248, 0) 0%,
+      rgba(66, 158, 145, 0.47) 64.42%,
+      #429e91 126.21%
+    ),
+    #d9d9d9;
+  --bosta-mint-Green: #429e91;
+  --bosta-screen-color: #f5f5f5;
+  font-family: Futura;
+}
+
+.bg-color-bosta-gray {
+  background: var(--bosta-screen-color);
+}
+
+.loading-page-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loading-logo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  scale: 0.5;
+  animation: flicker 0.6s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section-padding-block {
+  padding-block: 1rem;
+}
+
+.section-inline-padding {
+  padding-inline: 1rem;
+}
+
+.gap-24px {
+  gap: 24px;
+}
+
+.max-width-1152px {
+  max-width: 1152px;
+}
+
+.page-title {
+  font-size: 50px;
+  color: var(--Black-GSMS, #011632);
+  text-align: center;
+  font-family: Futura;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}

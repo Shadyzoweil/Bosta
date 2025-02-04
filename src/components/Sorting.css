@@ -1,0 +1,19 @@
+.sorting-container {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.sorting-container select {
+  padding: 5px;
+  font-size: 16px;
+  border: black;
+  max-width: 100px;
+}
+
+.sort-by {
+  font-size: clamp(8px, 4vw, 15px);
+  color: var(--Black-GSMS, #011632);
+  max-width: 100px;
+}
