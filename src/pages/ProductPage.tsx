@@ -42,7 +42,7 @@ const ProductPage: React.FC = (): JSX.Element => {
   };
   return (
     <Screen>
-      <Section className="height-100vh">
+      <Section className="height-100vh section-inline-padding">
         <h1 className="page-title">Product</h1>
         <div className="product-page">
           <h1 className="create-new-product">Create New Product</h1>

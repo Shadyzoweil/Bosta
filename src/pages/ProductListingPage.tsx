@@ -39,8 +39,8 @@ const ProductListingPage: React.FC = (): JSX.Element => {
     navigate("/product");
   };
   return (
-    <Screen>
-      <Section className="gap-24px">
+    <Screen >
+      <Section className="gap-24px section-inline-padding">
         <h1 className="page-title">Products</h1>
         <div className="wide-div">
           <Sort sortOption={sortOption} setSortOption={setSortOption} />
