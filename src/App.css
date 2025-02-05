@@ -21,10 +21,19 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+@media (max-width: 768px) {
+  .loading-page-container {
+    width: 500px;
+    height: 500px;
+  }
+}
 .loading-logo {
   object-fit: cover;
   width: 100%;
